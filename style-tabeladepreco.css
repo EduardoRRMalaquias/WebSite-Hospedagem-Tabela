@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --Cinza-claro1: #f1f3f7;
+  --Cinza-claro2: #f6f6f6;
+  --Cinza: #a8a4a4;
+  --Cinza-escuro: #233032;
+  --Azul-principal: #2f85d6;
+}
+
+/* GERAL */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.limita-largura {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*logo*/
+
+.img-logo {
+  width: 80px;
+  margin: 0 10px;
+}
+
+.logo {
+  width: 320px;
+  position: relative;
+}
+
+.tx-logo {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.tx-logo span {
+  font-weight: 600;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link h1 {
+  color: black;
+}
+
+/*Topo*/
+
+header {
+  background-color: var(--Azul-principal);
+  padding: 35px 0px;
+  width: 100%;
+  height: 150px;
+  box-shadow: 0px 2px 4px #00000050;
+}
+
+nav {
+  width: 400px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+nav ul {
+  width: 400px;
+  list-style: none;
+  display: flex;
+  text-align: right;
+}
+
+nav a {
+  padding: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1em;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: var(--Cinza-claro1);
+  color: var(--Azul-principal);
+}
+
+/* TABELA DE PRECOS*/
+
+article {
+  padding: 100px 0px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th {
+  background-color: var(--Cinza-claro1);
+  border: 2px solid white;
+}
+
+thead td {
+  padding: 0px 150px;
+}
+
+thead th {
+  padding: 15px 50px;
+  text-align: center;
+}
+
+thead h2 {
+  font-size: 2.5em;
+}
+
+thead span {
+  color: var(--Cinza);
+  font-weight: 500;
+}
+
+tbody th {
+  text-align: left;
+  padding: 25px;
+}
+
+tbody td {
+  text-align: center;
+  border: 2px solid var(--Cinza-claro2);
+  font-weight: 600;
+}
+
+tbody span {
+  width: 25px;
+  height: 25px;
+  background-color: var(--Azul-principal);
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* RODAPE*/
+
+footer .logo {
+  margin: auto;
+}
+
+.contato {
+  padding: 100px;
+  position: relative;
+  background-color: var(--Azul-principal);
+}
+
+.contato p {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+  color: white;
+}
+
+.credito {
+  background-color: var(--Cinza-claro1);
+  padding: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.credito a {
+  text-decoration: none;
+  color: var(--Azul-principal);
+}
+
+.credito a:hover {
+  text-decoration: underline;
+}

@@ -5,28 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AlfaTech - Tabela de Preços</title>
+  <link rel="stylesheet" href="style-tabeladepreco.css">
 </head>
 
 <body>
   <header>
-    <div>
-      <img src="img/logo-icone-escuro.png" alt="AlfaTech Soluçoes em Hospedagem">
-      <h1>AlfaTech</h1>
-      <span>Soluções em hospedagem</span>
-    </div>
+    <div class="limita-largura">
+      <a class="link" href="index.html">
+        <div class="logo">
+          <img class="img-logo" src="img/logo-icone-escuro.png" alt="AlfaTech Soluçoes em Hospedagem">
+          <div class="tx-logo">
+            <h1>AlfaTech</h1>
+            <span>Soluções em hospedagem</span>
+          </div>
+        </div>
+      </a>
 
-    <nav>
-      <ul>
-        <li><a href="index.html#informacoes">INFORMAÇOES</a></li>
-        <li><a href="index.html#planos">PLANOS</a></li>
-        <li><a href="tabeladeprecos.html">PREÇOS</a></li>
-        <li><a href="index.html#contatos">CONTATO</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html#informacoes">INFORMAÇOES</a></li>
+          <li><a href="#planos">PLANOS</a></li>
+          <li><a href="tabeladeprecos.html">PREÇOS</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <article>
+    <article id="planos">
       <table>
         <thead>
           <tr>
@@ -160,17 +167,19 @@
     </article>
   </main>
 
-  <footer>
-    <section>
-      <div>
-        <img src="img/logo-icone-escuro.png" alt="AlfaTech Soluçoes em Hospedagem">
-        <h1>AlfaTech</h1>
-        <span>Soluções em hospedagem</span>
+  <footer id="contato">
+    <section class="contato">
+      <div class="logo">
+        <img class="img-logo" src="img/logo-icone-escuro.png" alt="AlfaTech Soluçoes em Hospedagem">
+        <div class="tx-logo">
+          <h1>AlfaTech</h1>
+          <span>Soluções em hospedagem</span>
+        </div>
       </div>
       <p>© AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
     </section>
-    <section>
-      <p>Desenvolvido por <a href="#">Eduardo R R Malaquias</a></p>
+    <section class="credito">
+      <p>Desenvolvido por <a href="https://www.instagram.com/du.dustb/">Eduardo R R Malaquias</a></p>
     </section>
   </footer>
 

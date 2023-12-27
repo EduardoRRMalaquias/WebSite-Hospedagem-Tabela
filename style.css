@@ -276,6 +276,7 @@ footer .logo {
 .contato {
   padding: 100px;
   position: relative;
+  background-color: white;
 }
 
 .contato p {
@@ -283,6 +284,7 @@ footer .logo {
   text-align: center;
   font-weight: 600;
   padding: 10px;
+  color: var(--Cinza-escuro);
 }
 
 .credito {
