@@ -29,6 +29,14 @@ html {
   position: relative;
 }
 
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*logo*/
 
 .logo {
@@ -98,25 +106,32 @@ nav a:hover {
 
 .banner {
   background-color: var(--Azul-principal);
-  padding: 180px 0px;
+  padding: 100px 0px;
 }
 
 .texto-baner {
-  width: 470px;
   color: white;
+  padding: 10px 20px;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  flex: 1 1 300px;
+}
+
+.banner-img {
+  flex: 1 1 468px;
+}
+
+.banner-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .texto-baner h2 {
   font-size: 28px;
   padding: 10px 0;
-}
-
-.banner img {
-  width: 50%;
-  position: absolute;
-  right: 0;
-  top: -100px;
 }
 
 /*Anuncio geral*/
