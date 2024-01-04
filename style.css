@@ -35,6 +35,9 @@ html {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 /*logo*/
@@ -67,6 +70,8 @@ header {
   background-color: white;
   padding: 35px 50px;
   width: 100%;
+  min-height: 150px;
+  max-height: 195px;
   box-shadow: 0px 2px 4px #00000050;
   display: flex;
   justify-content: space-around;
@@ -106,7 +111,7 @@ nav a:hover {
 
 .banner {
   background-color: var(--Azul-principal);
-  padding: 100px 0px;
+  padding: 80px 0px;
 }
 
 .texto-baner {
@@ -140,23 +145,24 @@ nav a:hover {
   padding: 40px 0;
 }
 
-.anuncio h2,
-.anuncio p {
-  width: 600px;
+.tx-anuncio {
+  max-width: 600px;
+  padding: 0px 20px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .anuncio a {
   padding: 20px;
   background-color: #233032;
-  position: absolute;
-  right: 0;
-  top: 0;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.2em;
   color: white;
+  margin: 0px 20px;
 }
 
 .anuncio img {
