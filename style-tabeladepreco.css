@@ -23,28 +23,42 @@ html {
   scroll-behavior: smooth;
 }
 
-.limita-largura {
-  width: 1024px;
+.container {
+  width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 /*logo*/
 
-.img-logo {
-  width: 80px;
-  margin: 0 10px;
+header a {
+  text-decoration: none;
 }
 
 .logo {
-  width: 320px;
-  position: relative;
+  max-width: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.tx-logo {
-  display: inline-block;
-  position: absolute;
-  top: 0;
+.logo h1 {
+  color: black;
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+}
+
+.logo-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .tx-logo span {
@@ -52,51 +66,47 @@ html {
   color: white;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.link h1 {
-  color: black;
-}
-
 /*Topo*/
 
 header {
   background-color: var(--Azul-principal);
-  padding: 35px 0px;
+  padding: 35px 50px;
   width: 100%;
-  height: 150px;
+  min-height: 150px;
+  max-height: 195px;
   box-shadow: 0px 2px 4px #00000050;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 nav {
-  width: 400px;
-  position: absolute;
-  right: 0;
-  top: 30px;
+  max-width: 385px;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
-  width: 400px;
   list-style: none;
   display: flex;
-  text-align: right;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
 nav a {
-  padding: 0 15px;
+  padding: 5px;
   text-decoration: none;
   color: white;
   font-weight: 600;
-  font-size: 1.1em;
-  display: inline-block;
   border-radius: 10px;
 }
 
 nav a:hover {
-  background-color: var(--Cinza-claro1);
-  color: var(--Azul-principal);
+  background-color: #509adf;
+  color: var(--Cinza-escuro);
 }
 
 /* TABELA DE PRECOS*/
@@ -153,24 +163,30 @@ tbody span {
   margin: auto;
 }
 
+.tabela-flow {
+  padding: 0px 10px;
+  margin: auto;
+  overflow-x: auto;
+}
+
 /* RODAPE*/
 
 footer .logo {
   margin: auto;
+  padding-bottom: 50px;
 }
 
 .contato {
-  padding: 100px;
+  padding: 50px;
   position: relative;
   background-color: var(--Azul-principal);
 }
 
 .contato p {
-  font-size: 1.2em;
   text-align: center;
   font-weight: 600;
-  padding: 10px;
-  color: white;
+  padding: 10px 0px;
+  color: var(--Cinza-claro1);
 }
 
 .credito {
